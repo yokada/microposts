@@ -1,0 +1,23 @@
+---
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      micropost: マイクロポスト
+    attributes:
+      user:
+        id: ID
+        name: 名前
+        email: メールアドレス
+        profile: プロフィール
+        country: 国
+        password: パスワード
+        password_confirmation: パスワード確認
+        created_at: 登録日時
+        updated_at: 更新日時
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"
